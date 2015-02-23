@@ -4,7 +4,7 @@
   <title><![CDATA[Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/feed" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-23T22:09:52+08:00</updated>
+  <updated>2015-02-23T23:14:13+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
     <name><![CDATA[sophyphilo]]></name>
@@ -15,37 +15,39 @@
   
   <entry>
     <title type="html"><![CDATA[test_blog_2]]></title>
-    <link href="http://sophyphilo.github.io/blog/2015/02/23/test-blog-2/"/>
+    <link href="http://sophyphilo.github.io/blog/20150223/test-blog-2.html/"/>
     <updated>2015-02-23T22:00:15+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/2015/02/23/test-blog-2</id>
+    <id>http://sophyphilo.github.io/blog/20150223/test-blog-2</id>
     <content type="html"><![CDATA[<p>test22 test222</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[测试一下blog]]></title>
-    <link href="http://sophyphilo.github.io/blog/2015/02/23/test-blog/"/>
+    <link href="http://sophyphilo.github.io/blog/20150223/test-blog.html/"/>
     <updated>2015-02-23T22:00:00+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/2015/02/23/test-blog</id>
-    <content type="html"><![CDATA[<h1>This is an H1</h1>
+    <id>http://sophyphilo.github.io/blog/20150223/test-blog</id>
+    <content type="html"><![CDATA[<h1 id="this-is-an-h1">This is an H1</h1>
 
-<h2>This is an H2</h2>
+<h2 id="this-is-an-h2">This is an H2</h2>
 
 <p>第一个blog</p>
 
-<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</p>
+<blockquote>
+  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+<!--more-->
+&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
 
-<blockquote><p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote>
+  <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
 
-<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.</p></blockquote>
-
-<h3>fjeiwpq</h3>
+<h3 id="fjeiwpq">fjeiwpq</h3>
 
 <p>test aaa</p>
 
-<p> id sem consectetuer libero luctus adipiscing.</p>
+<p>id sem consectetuer libero luctus adipiscing.</p>
 ]]></content>
   </entry>
   

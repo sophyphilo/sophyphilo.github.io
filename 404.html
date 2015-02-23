@@ -33,6 +33,34 @@ Feb 23 2015 &hellip;">
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
   
 
 </head>
@@ -81,7 +109,7 @@ Feb 23 2015 &hellip;">
 
 <article>
   
-<h1><a href="/blog/2015/02/23/test-blog-2/">Test_blog_2</a></h1>
+<h1><a href="/blog/20150223/test-blog-2.html/">Test_blog_2</a></h1>
 <time datetime="2015-02-23T22:00:15+08:00" pubdate><span class='month'>Feb</span> <span class='day'>23</span> <span class='year'>2015</span></time>
 
 <footer>
@@ -93,7 +121,7 @@ Feb 23 2015 &hellip;">
 
 <article>
   
-<h1><a href="/blog/2015/02/23/test-blog/">测试一下blog</a></h1>
+<h1><a href="/blog/20150223/test-blog.html/">测试一下blog</a></h1>
 <time datetime="2015-02-23T22:00:00+08:00" pubdate><span class='month'>Feb</span> <span class='day'>23</span> <span class='year'>2015</span></time>
 
 
@@ -121,11 +149,11 @@ Feb 23 2015 &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/02/23/test-blog-2/">Test_blog_2</a>
+        <a href="/blog/20150223/test-blog-2.html/">Test_blog_2</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2015/02/23/test-blog/">测试一下blog</a>
+        <a href="/blog/20150223/test-blog.html/">测试一下blog</a>
       </li>
     
   </ul>

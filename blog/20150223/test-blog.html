@@ -19,7 +19,7 @@ consectetuer adipiscing elit. Aliquam &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sophyphilo.github.io/blog/2015/02/23/test-blog/">
+  <link rel="canonical" href="http://sophyphilo.github.io/blog/20150223/test-blog.html/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Sophyphilo's Blog" type="application/atom+xml">
@@ -30,6 +30,34 @@ consectetuer adipiscing elit. Aliquam &hellip;">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
   
 
@@ -85,25 +113,27 @@ consectetuer adipiscing elit. Aliquam &hellip;">
   </header>
 
 
-<div class="entry-content"><h1>This is an H1</h1>
+<div class="entry-content"><h1 id="this-is-an-h1">This is an H1</h1>
 
-<h2>This is an H2</h2>
+<h2 id="this-is-an-h2">This is an H2</h2>
 
 <p>第一个blog</p>
 
-<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</p>
+<blockquote>
+  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+<!--more-->
+&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
 
-<blockquote><p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote>
+  <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
 
-<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.</p></blockquote>
-
-<h3>fjeiwpq</h3>
+<h3 id="fjeiwpq">fjeiwpq</h3>
 
 <p>test aaa</p>
 
-<p> id sem consectetuer libero luctus adipiscing.</p>
+<p>id sem consectetuer libero luctus adipiscing.</p>
 </div>
 
 
@@ -127,7 +157,7 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sophyphilo.github.io/blog/2015/02/23/test-blog/" data-via="" data-counturl="http://sophyphilo.github.io/blog/2015/02/23/test-blog/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sophyphilo.github.io/blog/20150223/test-blog.html/" data-via="" data-counturl="http://sophyphilo.github.io/blog/20150223/test-blog.html/" >Tweet</a>
   
   
   
@@ -137,7 +167,7 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
     <p class="meta">
       
       
-        <a class="basic-alignment right" href="/blog/2015/02/23/test-blog-2/" title="Next Post: test_blog_2">test_blog_2 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/20150223/test-blog-2.html/" title="Next Post: test_blog_2">test_blog_2 &raquo;</a>
       
     </p>
   </footer>
@@ -160,11 +190,11 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/02/23/test-blog-2/">Test_blog_2</a>
+        <a href="/blog/20150223/test-blog-2.html/">Test_blog_2</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2015/02/23/test-blog/">测试一下blog</a>
+        <a href="/blog/20150223/test-blog.html/">测试一下blog</a>
       </li>
     
   </ul>
