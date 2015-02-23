@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Fewe | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Fewe | Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/blog/categories/fewe/atom.xml" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-23T14:01:23+08:00</updated>
+  <updated>2015-02-23T22:09:52+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[sophyphilo]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Test_blog_2]]></title>
-    <link href="http://sophyphilo.github.io/blog/2015/02/06/test-blog-2/"/>
-    <updated>2015-02-06T19:00:15+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/2015/02/06/test-blog-2</id>
-    <content type="html"><![CDATA[
+    <link href="http://sophyphilo.github.io/blog/2015/02/23/test-blog-2/"/>
+    <updated>2015-02-23T22:00:15+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/2015/02/23/test-blog-2</id>
+    <content type="html"><![CDATA[<p>test22 test222</p>
 ]]></content>
   </entry>
   

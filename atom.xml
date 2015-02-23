@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/atom.xml" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-23T14:01:23+08:00</updated>
+  <updated>2015-02-23T22:09:52+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[sophyphilo]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Test_blog_2]]></title>
-    <link href="http://sophyphilo.github.io/blog/2015/02/06/test-blog-2/"/>
-    <updated>2015-02-06T19:00:15+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/2015/02/06/test-blog-2</id>
-    <content type="html"><![CDATA[
+    <link href="http://sophyphilo.github.io/blog/2015/02/23/test-blog-2/"/>
+    <updated>2015-02-23T22:00:15+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/2015/02/23/test-blog-2</id>
+    <content type="html"><![CDATA[<p>test22 test222</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[测试一下blog]]></title>
-    <link href="http://sophyphilo.github.io/blog/2015/02/06/test-blog/"/>
-    <updated>2015-02-06T11:30:38+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/2015/02/06/test-blog</id>
+    <link href="http://sophyphilo.github.io/blog/2015/02/23/test-blog/"/>
+    <updated>2015-02-23T22:00:00+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/2015/02/23/test-blog</id>
     <content type="html"><![CDATA[<h1>This is an H1</h1>
 
 <h2>This is an H2</h2>
@@ -42,6 +42,8 @@ consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</p>
 id sem consectetuer libero luctus adipiscing.</p></blockquote>
 
 <h3>fjeiwpq</h3>
+
+<p>test aaa</p>
 
 <p> id sem consectetuer libero luctus adipiscing.</p>
 ]]></content>
