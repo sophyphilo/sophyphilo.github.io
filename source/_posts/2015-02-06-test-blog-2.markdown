@@ -1,0 +1,9 @@
+---
+layout: post
+title: "test_blog_2"
+date: 2015-02-06 19:00:15 +0800
+comments: true
+categories: 
+- 啊啊啊
+- fewe
+---
