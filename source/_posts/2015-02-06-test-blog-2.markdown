@@ -9,3 +9,19 @@ categories:
 ---
 
 test22 test222
+
+{% codeblock lang:C++ 服务器 http://www.baidu.com %}
+#include <sys/epoll.h>
+#include "stdio.h"
+
+int main()
+{
+        printf("(EPOLLIN | EPOLLERR | EPOLLHUP):%u\n", (unsigned int)(EPOLLIN | EPOLLERR | EPOLLHUP));
+        printf("(EPOLLIN | EPOLLERR | EPOLLHUP | EPOLLET):%u\n", (unsigned int)(EPOLLIN | EPOLLERR | EPOLLHUP | EPOLLET));
+}
+{% endcodeblock %}
+
+{% codeblock %}
+gem 'kramdown'
+gem 'coderay'
+{% endcodeblock %}
