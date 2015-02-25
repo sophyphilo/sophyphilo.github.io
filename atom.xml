@@ -4,7 +4,7 @@
   <title><![CDATA[Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/atom.xml" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-25T18:20:10+08:00</updated>
+  <updated>2015-02-25T18:28:17+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
     <name><![CDATA[sophyphilo]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Second Blog]]></title>
+    <link href="http://sophyphilo.github.io/blog/20150225/second-blog/"/>
+    <updated>2015-02-25T18:27:52+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/20150225/second-blog</id>
+    <content type="html"><![CDATA[<p>fjeiwpfjew
+jfeiwopjve</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Blog]]></title>
