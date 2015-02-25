@@ -4,7 +4,7 @@
   <title><![CDATA[Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/atom.xml" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-25T15:20:18+08:00</updated>
+  <updated>2015-02-25T15:26:08+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
     <name><![CDATA[sophyphilo]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First Blog]]></title>
+    <link href="http://sophyphilo.github.io/blog/20150225/first-blog.html/"/>
+    <updated>2015-02-25T15:25:36+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/20150225/first-blog</id>
+    <content type="html"><![CDATA[<p>学习使用markdown</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Test_blog_2]]></title>
