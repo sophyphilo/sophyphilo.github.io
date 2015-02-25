@@ -71,6 +71,9 @@ default_asides: [custom/asides/category_list.html, asides/recent_posts.html, asi
 #   3rd Party Settings    #
 # ----------------------- #
 
+# jiathis
+comment_share: true
+
 # Github repositories
 #github_user:
 #github_repo_count: 0
