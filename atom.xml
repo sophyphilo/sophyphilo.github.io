@@ -4,7 +4,7 @@
   <title><![CDATA[Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/atom.xml" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-23T23:14:13+08:00</updated>
+  <updated>2015-02-25T14:52:26+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
     <name><![CDATA[sophyphilo]]></name>
@@ -19,6 +19,29 @@
     <updated>2015-02-23T22:00:15+08:00</updated>
     <id>http://sophyphilo.github.io/blog/20150223/test-blog-2</id>
     <content type="html"><![CDATA[<p>test22 test222</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>服务器</span><a href="http://www.baidu.com">link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="C++"><span class="line"><span class="cp">#include &lt;sys/epoll.h&gt;</span>
+</span><span class="line"><span class="cp">#include &quot;stdio.h&quot;</span>
+</span><span class="line">
+</span><span class="line"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span><span class="line"><span class="p">{</span>
+</span><span class="line">        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;(EPOLLIN | EPOLLERR | EPOLLHUP):%u</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">)(</span><span class="n">EPOLLIN</span> <span class="o">|</span> <span class="n">EPOLLERR</span> <span class="o">|</span> <span class="n">EPOLLHUP</span><span class="p">));</span>
+</span><span class="line">        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;(EPOLLIN | EPOLLERR | EPOLLHUP | EPOLLET):%u</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">)(</span><span class="n">EPOLLIN</span> <span class="o">|</span> <span class="n">EPOLLERR</span> <span class="o">|</span> <span class="n">EPOLLHUP</span> <span class="o">|</span> <span class="n">EPOLLET</span><span class="p">));</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">gem 'kramdown'
+</span><span class="line">gem 'coderay'</span></code></pre></td></tr></table></div></figure></notextile></div>
 ]]></content>
   </entry>
   
@@ -27,7 +50,17 @@
     <link href="http://sophyphilo.github.io/blog/20150223/test-blog.html/"/>
     <updated>2015-02-23T22:00:00+08:00</updated>
     <id>http://sophyphilo.github.io/blog/20150223/test-blog</id>
-    <content type="html"><![CDATA[<h1 id="this-is-an-h1">This is an H1</h1>
+    <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#this-is-an-h1">This is an H1</a>    <ul>
+      <li><a href="#this-is-an-h2">This is an H2</a>        <ul>
+          <li><a href="#fjeiwpq">fjeiwpq</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="this-is-an-h1">This is an H1</h1>
 
 <h2 id="this-is-an-h2">This is an H2</h2>
 
