@@ -4,7 +4,7 @@
   <title><![CDATA[Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/atom.xml" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-25T15:26:08+08:00</updated>
+  <updated>2015-02-25T15:45:48+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
     <name><![CDATA[sophyphilo]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[First Blog]]></title>
-    <link href="http://sophyphilo.github.io/blog/20150225/first-blog.html/"/>
+    <link href="http://sophyphilo.github.io/blog/20150225/first-blog/"/>
     <updated>2015-02-25T15:25:36+08:00</updated>
     <id>http://sophyphilo.github.io/blog/20150225/first-blog</id>
     <content type="html"><![CDATA[<p>学习使用markdown</p>
@@ -25,7 +25,7 @@
   
   <entry>
     <title type="html"><![CDATA[Test_blog_2]]></title>
-    <link href="http://sophyphilo.github.io/blog/20150223/test-blog-2.html/"/>
+    <link href="http://sophyphilo.github.io/blog/20150223/test-blog-2/"/>
     <updated>2015-02-23T22:00:15+08:00</updated>
     <id>http://sophyphilo.github.io/blog/20150223/test-blog-2</id>
     <content type="html"><![CDATA[<p>test22 test222</p>
@@ -57,7 +57,7 @@
   
   <entry>
     <title type="html"><![CDATA[测试一下blog]]></title>
-    <link href="http://sophyphilo.github.io/blog/20150223/test-blog.html/"/>
+    <link href="http://sophyphilo.github.io/blog/20150223/test-blog/"/>
     <updated>2015-02-23T22:00:00+08:00</updated>
     <id>http://sophyphilo.github.io/blog/20150223/test-blog</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
