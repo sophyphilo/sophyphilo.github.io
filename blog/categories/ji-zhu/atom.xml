@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术 | Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/blog/categories/ji-zhu/atom.xml" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-26T17:33:13+08:00</updated>
+  <updated>2015-02-26T19:04:08+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
     <name><![CDATA[sophyphilo]]></name>
@@ -12,6 +12,94 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[学习Markdown]]></title>
+    <link href="http://sophyphilo.github.io/blog/20150226/study-markdown/"/>
+    <updated>2015-02-26T17:45:47+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/20150226/study-markdown</id>
+    <content type="html"><![CDATA[<p>基于Octopress的blog搭建起来了, Markdown是写博客必不可少的工具. 很快浏览了一遍Markdown的语法, 确实是极简的轻量标记语言, 易读易写.</p>
+
+<hr />
+
+<h2 id="markdown">Markdown是什么</h2>
+
+<p>Markdown是一个将文本转化为HTML的工具语言, 一种书写格式, 不想要取代HTML, 甚至也没有要和它相近.</p>
+
+<!--more-->
+
+<p>以下将Markdown的语法简单罗列一下, 只为自己能迅速熟悉Markdown, 已经了解Markdown的童鞋可以绕道了 (不过话说Markdown的语法也过于简单了 ;-) )   </p>
+
+<p>先推荐几个介绍Markdown比较不错的网站:  <br />
+  1. <a href="http://wowubuntu.com/markdown/">Markdown 语法说明 (简体中文版)</a> <br />
+  2. <a href="http://www.jianshu.com/p/q81RER">献给写作者的 Markdown 新手指南</a>  <br />
+  3. <a href="http://lutaf.com/markdown-simple-usage.htm">1分钟学会Markdown语法</a>  <br />
+  4. <a href="http://equation85.github.io/blog/markdown-examples/">Markdown语法示例</a>      </p>
+
+<hr />
+
+<h2 id="section">标题</h2>
+
+<hr />
+
+<h2 id="section-1">换行</h2>
+
+<hr />
+
+<h2 id="section-2">分割线</h2>
+
+<hr />
+
+<h2 id="section-3">引用</h2>
+
+<hr />
+
+<h2 id="section-4">列表</h2>
+
+<h3 id="section-5">无序列表</h3>
+
+<h3 id="section-6">有序列表</h3>
+
+<h3 id="section-7">嵌套列表</h3>
+
+<hr />
+
+<h2 id="section-8">代码块</h2>
+
+<hr />
+
+<h2 id="section-9">强调</h2>
+
+<hr />
+
+<h2 id="section-10">链接</h2>
+
+<h3 id="section-11">文字链接</h3>
+
+<h3 id="section-12">图片链接</h3>
+
+<hr />
+
+<h2 id="section-13">代码</h2>
+
+<hr />
+
+<h2 id="section-14">注释</h2>
+
+<pre><code>markdown使用html的注释, 如下:
+&lt;!--
+注释
+--&gt;
+</code></pre>
+
+<hr />
+
+<h2 id="section-15">自动链接</h2>
+
+<hr />
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[如何使用github和octopress搭建blog]]></title>
