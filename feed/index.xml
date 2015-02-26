@@ -4,7 +4,7 @@
   <title><![CDATA[Sophyphilo's Blog]]></title>
   <link href="http://sophyphilo.github.io/feed" rel="self"/>
   <link href="http://sophyphilo.github.io/"/>
-  <updated>2015-02-25T18:28:17+08:00</updated>
+  <updated>2015-02-26T17:21:59+08:00</updated>
   <id>http://sophyphilo.github.io/</id>
   <author>
     <name><![CDATA[sophyphilo]]></name>
@@ -14,93 +14,71 @@
 
   
   <entry>
-    <title type="html"><![CDATA[second blog]]></title>
-    <link href="http://sophyphilo.github.io/blog/20150225/second-blog/"/>
-    <updated>2015-02-25T18:27:52+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/20150225/second-blog</id>
-    <content type="html"><![CDATA[<p>fjeiwpfjew
-jfeiwopjve</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[first blog]]></title>
-    <link href="http://sophyphilo.github.io/blog/20150225/first-blog/"/>
-    <updated>2015-02-25T15:25:36+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/20150225/first-blog</id>
-    <content type="html"><![CDATA[<p>学习使用markdown</p>
+    <title type="html"><![CDATA[如何使用github和octopress搭建blog]]></title>
+    <link href="http://sophyphilo.github.io/blog/20150226/setup-octopress/"/>
+    <updated>2015-02-26T15:08:07+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/20150226/setup-octopress</id>
+    <content type="html"><![CDATA[<p>折腾了一些时间, 终于把blog在github上面搭建起来了, 非常感谢<br />
+  <a href="http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/">http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/</a> 这篇博文的作者.   </p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[test_blog_2]]></title>
-    <link href="http://sophyphilo.github.io/blog/20150223/test-blog-2/"/>
-    <updated>2015-02-23T22:00:15+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/20150223/test-blog-2</id>
-    <content type="html"><![CDATA[<p>test22 test222</p>
+<p><code>如何使用github和octopress搭建blog</code> 这个话题, 上面的博文已经讲得非常清晰了, 有兴趣的同学仔细研究那篇博文就可以, 我就不再废话了, 哈哈~~    </p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>服务器</span><a href="http://www.baidu.com">link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<p>下面主要说一下在搭建中遇到的问题以及那篇博文没有介绍的一些内容, 做个备忘:   </p>
+
+<p><!--more--></p>
+
+<h4 id="section">1. 分类列表不支持中文</h4>
+<p>按照 <a href="http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/#section">http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/#section</a> 的方法制作分类目录的插件, 但是在 <code>rake generate</code> 后, 出现如下错误:   </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Liquid error: incompatible encoding regexp match (ASCII-8BIT regexp with UTF-8 string)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>最终在这里 <a href="http://pfmiles.github.io/blog/liquid-error-about-regexp-match-when-using-octopress-tagcloud/">http://pfmiles.github.io/blog/liquid-error-about-regexp-match-when-using-octopress-tagcloud/</a> 找到了答案, 我采用了第二种方法, 在正则式后加上u选项, 将</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>改为</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">category_url = File.join(category_dir, category.gsub(/_|\P{Word}/u, '-').gsub(/-{2,}/u, '-').downcase)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h4 id="blog">2. 如何加快blog的访问速度</h4>
+<p>历经千辛万苦搭建完blog, 很兴奋的用markdown写篇测试博文, <code>rake deploy</code>, 在chrome中浏览却发现加载页面的速度慢如蜗牛……, 看了看_config.yml, 瞥见了google plus, twitter, 万恶的GFW…… <br />
+  看<a href="http://droidyue.com/blog/2014/06/22/fix-octopress-slow-loading-speed-issue-in-china-mainland/">这里</a>, 经过一番清理, 提速不少~~</p>
+
+<h4 id="section-1">3. 在侧边栏添加访客地图</h4>
+
+<p>使用第三方提供的服务, 从<a href="http://www.revolvermaps.com/?target=setup">这里</a>获取js代码.  </p>
+
+<h5 id="sourceincludescustomasides-visitorhtml">3.1 在 source/_includes/custom/asides/ 路径下添加visitor.html</h5>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>source/_includes/custom/asides/visitor.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
 <span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="C++"><span class="line"><span class="cp">#include &lt;sys/epoll.h&gt;</span>
-</span><span class="line"><span class="cp">#include &quot;stdio.h&quot;</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line">  <span class="nt">&lt;section&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h1&gt;</span>访客地图<span class="nt">&lt;/h1&gt;</span>
+</span><span class="line">          <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;//rj.revolvermaps.com/0/0/1.js?i=9ojojv7pf1u&amp;amp;s=220&amp;amp;m=0&amp;amp;v=true&amp;amp;r=false&amp;amp;b=000000&amp;amp;n=false&amp;amp;c=ff0000&quot;</span> <span class="na">async=</span><span class="s">&quot;async&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class="line">  <span class="nt">&lt;/section&gt;</span>
 </span><span class="line">
-</span><span class="line"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;(EPOLLIN | EPOLLERR | EPOLLHUP):%u</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">)(</span><span class="n">EPOLLIN</span> <span class="o">|</span> <span class="n">EPOLLERR</span> <span class="o">|</span> <span class="n">EPOLLHUP</span><span class="p">));</span>
-</span><span class="line">        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;(EPOLLIN | EPOLLERR | EPOLLHUP | EPOLLET):%u</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">)(</span><span class="n">EPOLLIN</span> <span class="o">|</span> <span class="n">EPOLLERR</span> <span class="o">|</span> <span class="n">EPOLLHUP</span> <span class="o">|</span> <span class="n">EPOLLET</span><span class="p">));</span>
-</span><span class="line"><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<h5 id="visitorhtml">3.2 将visitor.html加入主页面</h5>
+<p>修改_config.yml, 将visitor.html 加入 <code>default_asides</code>.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml中的default_asides </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">gem 'kramdown'
-</span><span class="line">gem 'coderay'</span></code></pre></td></tr></table></div></figure></notextile></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[测试一下blog]]></title>
-    <link href="http://sophyphilo.github.io/blog/20150223/test-blog/"/>
-    <updated>2015-02-23T22:00:00+08:00</updated>
-    <id>http://sophyphilo.github.io/blog/20150223/test-blog</id>
-    <content type="html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#this-is-an-h1">This is an H1</a>    <ul>
-      <li><a href="#this-is-an-h2">This is an H2</a>        <ul>
-          <li><a href="#fjeiwpq">fjeiwpq</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line">  <span class="l-Scalar-Plain">default_asides</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">custom/asides/category_list.html</span><span class="p-Indicator">,</span> <span class="nv">asides/recent_posts.html</span><span class="p-Indicator">,</span> <span class="nv">custom/asides/visitor.html</span><span class="p-Indicator">]</span>
+</span><span class="line">
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h1 id="this-is-an-h1">This is an H1</h1>
+<h4 id="section-2">4. 添加评论系统</h4>
+<p>我没有使用Octopress默认的Disqus, 国内比较常用的有 <code>多说</code> 和 <code>友言</code>, 我采用了 <code>友言</code> .
+   具体配置详情见<a href="http://pangyi.github.io/blog/20150125/shi-yong-you-yan-zuo-octopressde-ping-lun-xi-tong-,shi-yong-jia-wang-zuo-fen-xiang/">这里</a>.</p>
 
-<h2 id="this-is-an-h2">This is an H2</h2>
-
-<p>第一个blog</p>
-
-<blockquote>
-  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-<!--more-->
-&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
-
-  <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.</p>
-</blockquote>
-
-<h3 id="fjeiwpq">fjeiwpq</h3>
-
-<p>test aaa</p>
-
-<p>id sem consectetuer libero luctus adipiscing.</p>
 ]]></content>
   </entry>
   

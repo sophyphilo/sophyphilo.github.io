@@ -10,9 +10,7 @@
   <meta name="author" content="sophyphilo">
 
   
-  <meta name="description" content="fjeiwpfjew
-jfeiwopjve
-">
+  <meta name="description" content="折腾了一些时间, 终于把blog在github上面搭建起来了, 非常感谢 http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/ 这篇博文的作者. 如何使用github和octopress搭建blog 这个话题, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -89,8 +87,6 @@ jfeiwopjve
 <ul class="main-navigation">
   <li><a href="/">首页</a></li>
   <li><a href="/blog/archives">文章列表</a></li>
-  <li><a href="/add-page/">增加一页</a></li>
-  <li><a href="/add-page/test.html">测试页</a></li>
 </ul>
 
 </nav>
@@ -104,7 +100,7 @@ jfeiwopjve
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/20150225/second-blog/">Second Blog</a></h1>
+      <h1 class="entry-title"><a href="/blog/20150226/setup-octopress/">如何使用github和octopress搭建blog</a></h1>
     
     
       <p class="meta">
@@ -113,149 +109,25 @@ jfeiwopjve
 
 
 
-<time class='entry-date' datetime='2015-02-25T18:27:52+08:00'><span class='date'>2015 年2 月25 日</span> <span class='time'>6:27 pm</span></time>
+<time class='entry-date' datetime='2015-02-26T15:08:07+08:00'><span class='date'>2015 年2 月26 日</span> <span class='time'>3:08 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>fjeiwpfjew
-jfeiwopjve</p>
-</div>
-  
-  
+  <div class="entry-content"><p>折腾了一些时间, 终于把blog在github上面搭建起来了, 非常感谢<br />
+  <a href="http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/">http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/</a> 这篇博文的作者.   </p>
 
+<p><code>如何使用github和octopress搭建blog</code> 这个话题, 上面的博文已经讲得非常清晰了, 有兴趣的同学仔细研究那篇博文就可以, 我就不再废话了, 哈哈~~    </p>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/20150225/first-blog/">First Blog</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>下面主要说一下在搭建中遇到的问题以及那篇博文没有介绍的一些内容, 做个备忘:   </p>
 
-
-
-
-<time class='entry-date' datetime='2015-02-25T15:25:36+08:00'><span class='date'>2015 年2 月25 日</span> <span class='time'>3:25 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>学习使用markdown</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/20150223/test-blog-2/">Test_blog_2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-23T22:00:15+08:00'><span class='date'>2015 年2 月23 日</span> <span class='time'>10:00 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>test22 test222</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>服务器</span><a href="http://www.baidu.com">link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="C++"><span class="line"><span class="cp">#include &lt;sys/epoll.h&gt;</span>
-</span><span class="line"><span class="cp">#include &quot;stdio.h&quot;</span>
-</span><span class="line">
-</span><span class="line"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;(EPOLLIN | EPOLLERR | EPOLLHUP):%u</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">)(</span><span class="n">EPOLLIN</span> <span class="o">|</span> <span class="n">EPOLLERR</span> <span class="o">|</span> <span class="n">EPOLLHUP</span><span class="p">));</span>
-</span><span class="line">        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;(EPOLLIN | EPOLLERR | EPOLLHUP | EPOLLET):%u</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">)(</span><span class="n">EPOLLIN</span> <span class="o">|</span> <span class="n">EPOLLERR</span> <span class="o">|</span> <span class="n">EPOLLHUP</span> <span class="o">|</span> <span class="n">EPOLLET</span><span class="p">));</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">gem 'kramdown'
-</span><span class="line">gem 'coderay'</span></code></pre></td></tr></table></div></figure></notextile></div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/20150223/test-blog/">测试一下blog</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-23T22:00:00+08:00'><span class='date'>2015 年2 月23 日</span> <span class='time'>10:00 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul id="markdown-toc">
-  <li><a href="#this-is-an-h1">This is an H1</a>    <ul>
-      <li><a href="#this-is-an-h2">This is an H2</a>        <ul>
-          <li><a href="#fjeiwpq">fjeiwpq</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="this-is-an-h1">This is an H1</h1>
-
-<h2 id="this-is-an-h2">This is an H2</h2>
-
-<p>第一个blog</p>
-
-<blockquote>
-  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-</div>
+<p></div>
   
   
     <footer>
-      <a rel="full-article" href="/blog/20150223/test-blog/">阅读全文 &rarr;</a>
+      <a rel="full-article" href="/blog/20150226/setup-octopress/">阅读全文 &rarr;</a>
     </footer>
   
 
@@ -273,8 +145,9 @@ consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
     <section>
   <h1>分类目录</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/fewe/'>fewe (1)</a></li>
-<li class='category'><a href='/blog/categories/a-a-a/'>啊啊啊 (1)</a></li>
+    <li class='category'><a href='/blog/categories/github/'>github (1)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/ji-zhu/'>技术 (1)</a></li>
 
   </ul>
 </section>
@@ -283,19 +156,7 @@ consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/20150225/second-blog/">Second Blog</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/20150225/first-blog/">First Blog</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/20150223/test-blog-2/">Test_blog_2</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/20150223/test-blog/">测试一下blog</a>
+        <a href="/blog/20150226/setup-octopress/">如何使用github和octopress搭建blog</a>
       </li>
     
   </ul>
