@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：git | Sophyphilo's Blog]]></title>
+  <link href="http://sophyphilo.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://sophyphilo.github.io/"/>
+  <updated>2015-02-26T21:02:05+08:00</updated>
+  <id>http://sophyphilo.github.io/</id>
+  <author>
+    <name><![CDATA[sophyphilo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gitk的命令行替代工具]]></title>
+    <link href="http://sophyphilo.github.io/blog/20150226/command-line-substitute-for-gitk/"/>
+    <updated>2015-02-26T20:05:35+08:00</updated>
+    <id>http://sophyphilo.github.io/blog/20150226/command-line-substitute-for-gitk</id>
+    <content type="html"><![CDATA[<p><code>gitk</code> 是一个非常好用的帮助理清 <code>git</code> 分支间关系和 查看仓库历史的图形化工具.   <br />
+  但是如果没有GUI支持的时候 (比如git仓库在远程主机上 而且本机没有 <code>X11</code> 支持), 此时该如何查看仓库历史才能达到 <code>gitk</code> 的效果呢?   </p>
+
+<p><!--more--></p>
+
+<p><code>git log --graph</code> 加上几个选项可以达到 <code>gitk</code> 类似的效果:</p>
+
+<pre><code>git log --graph --abbrev-commit --pretty=oneline --decorate
+</code></pre>
+
+<p><code>--abbrev-commit</code> : 显示缩略的提交ID  <br />
+  <code>--pretty=oneline</code> : 一行显示一个提交 <br />
+  <code>--decorate</code> : 显示出提交对应的ref名称    </p>
+
+<hr />
+
+<p><strong>gitk 运行结果截图:</strong>  <br />
+  <img src="http://sophyphilo.github.io/images/blog_images/gitk-image.png" width="550" height="650" /> </p>
+
+<p><strong>git log运行结果截图:</strong><br />
+  <img src="http://sophyphilo.github.io/images/blog_images/git-log-image.png" width="550" height="650" /> </p>
+
+]]></content>
+  </entry>
+  
+</feed>
